@@ -1,11 +1,66 @@
 
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>الرئيسية - البنك العربي</title>
-  <meta name="description" content="مرحبًا بك في عروض البنك العربي - بطاقات، تمويل، خدمات رقمية والمزيد">
+  <title>عروض بطاقات البنك العربي</title>
+  <meta name="description" content="احصل على بطاقة فيزا أو ماستر كارد برصيد فوري الآن من البنك العربي.">
+  
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KS866RZS');
+</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1274887881317355');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1274887881317355&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <!-- Datahash Conversion API -->
+  <script>
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead');
+      fetch("https://dhapi.datahash.io/webhook/meta?token=abc123xyz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          event_name: "Lead",
+          event_time: Math.floor(Date.now() / 1000),
+          action_source: "website",
+          event_source_url: window.location.href,
+          user_data: {
+            client_user_agent: navigator.userAgent
+          },
+          custom_data: {
+            currency: "ILS",
+            value: 1000
+          }
+        })
+      });
+    }
+  </script>
 
   <style>
     body {
@@ -22,75 +77,71 @@
       padding: 40px 20px;
       text-align: center;
     }
-    nav {
-      background-color: #0062cc;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 60px 20px;
-      background: #e9ecef;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      color: #004481;
-    }
-    .section {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 40px 20px;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: center;
+    }
+    .card img {
+      width: 80px;
+      margin-bottom: 10px;
     }
     .btn {
-      display: inline-block;
-      background: #009688;
+      background-color: #00b894;
       color: white;
-      padding: 12px 25px;
-      border-radius: 30px;
+      padding: 10px 20px;
       text-decoration: none;
-      margin-top: 20px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 15px;
     }
-    footer {
-      background: #004481;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+    .note {
+      margin-top: 10px;
+      font-size: 0.85em;
+      color: #777;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>البنك العربي</h1>
-    <p>خدمات مصرفية متقدمة وعروض حصرية لعملائنا</p>
-  </header>
 
-  <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#">العروض</a>
-    <a href="#">البطاقات</a>
-    <a href="#">التواصل</a>
-  </nav>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS866RZS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-  <section class="hero">
-    <h1>احصل على بطاقتك برصيد فوري</h1>
-    <p>انضم الآن واستفد من العروض الحصرية على البطاقات البنكية من البنك العربي</p>
-    <a href="arabi-card-offers.html" class="btn">استعراض العروض</a>
-  </section>
 
-  <section class="section">
-    <h2>خدماتنا</h2>
-    <p>نقدم خدمات مصرفية رقمية، تمويل شخصي، بطاقات ائتمانية، والمزيد</p>
-  </section>
+<header>
+  <h1>عروض بطاقات البنك العربي</h1>
+  <p>احصل على بطاقة فيزا أو ماستر كارد برصيد فوري الآن</p>
+</header>
 
-  <footer>
-    <p>© 2025 البنك العربي - جميع الحقوق محفوظة</p>
-  </footer>
+<section class="cards">
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa Card">
+    <h2>بطاقة فيزا</h2>
+    <p><strong>رصيد مباشر:</strong> 1000 شيكل</p>
+    <a href="https://wa.me/96560312940" class="btn" onclick="fbq('track', 'Lead');">تقديم طلب عبر واتساب 📨</a>
+    <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/pXQnTp4W/2025-07-19-045618.png" alt="MasterCard">
+    <h2>بطاقة ماستر كارد</h2>
+    <p><strong>رصيد مباشر:</strong> 1000 شيكل</p>
+    <a href="https://wa.me/96560312940" class="btn" onclick="fbq('track', 'Lead');">تقديم طلب عبر واتساب 📨</a>
+    <p class="note">* التقديم مشروط بالموافقة حسب سياسة البنك</p>
+  </div>
+</section>
+
 </body>
 </html>
